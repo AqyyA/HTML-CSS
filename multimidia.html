@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 3.2 - Vídeo, Áudio e Iframe</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <h1>Exercício 3.2 - Página com vídeo, áudio e iframe</h1>
+
+  <nav aria-label="Navegação principal">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="curriculo.html">Currículo</a></li>
+      <li><a href="formulario.html">Formulário</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== VÍDEO LOCAL ===================== -->
+  <section>
+    <h2>Vídeo local</h2>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      <source src="video.webm" type="video/webm">
+      Seu navegador não suporta a exibição de vídeo em HTML5.
+      <a href="video.mp4">Clique aqui para baixar o vídeo</a>.
+    </video>
+    <p><em>Substitua "video.mp4" (e opcionalmente "video.webm") por um arquivo de vídeo próprio, salvo na mesma pasta deste HTML.</em></p>
+  </section>
+
+  <!-- ===================== ÁUDIO LOCAL ===================== -->
+  <section>
+    <h2>Áudio local</h2>
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+      <source src="audio.ogg" type="audio/ogg">
+      Seu navegador não suporta a reprodução de áudio em HTML5.
+      <a href="audio.mp3">Clique aqui para baixar o áudio</a>.
+    </audio>
+    <p><em>Substitua "audio.mp3" (e opcionalmente "audio.ogg") por um arquivo de áudio próprio, salvo na mesma pasta deste HTML.</em></p>
+  </section>
+
+  <!-- ===================== IFRAME RESPONSIVO (YOUTUBE) ===================== -->
+  <section>
+    <h2>Vídeo incorporado (YouTube)</h2>
+    <div class="video-responsivo">
+      <iframe
+        src="https://www.youtube.com/embed/1XzY2ij_vL4"
+        title="Vídeo incorporado do YouTube"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+</body>
+</html>
