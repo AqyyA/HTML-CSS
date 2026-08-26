@@ -163,38 +163,3 @@ button {
 button:hover {
     background-color: #0d47a1;
 }
-
-/* ---------- Multimídia ---------- */
-.video-responsivo {
-    position: relative;
-    padding-bottom: 56.25%; /* proporção 16:9 */
-    height: 0;
-    overflow: hidden;
-    max-width: 640px;
-}
-
-.video-responsivo iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-/* ==========================================================
-   TESTE DE ESPECIFICIDADE (seletor de elemento)
-   ==========================================================
-   Regra 1 (seletor de elemento, especificidade 0-0-1):
-   define uma cor padrão para TODOS os <strong> da página.
-*/
-strong {
-    color: #b03a2e;
-}
-
-/* Regra 2 (seletor de classe, especificidade 0-1-0):
-   como .destaque tem especificidade maior que o seletor
-   de elemento "strong" acima, ela vence e sobrescreve a cor,
-   mesmo aparecendo antes no arquivo. Isso comprova que
-   especificidade — e não apenas a ordem no CSS — decide
-   qual regra prevalece. */
